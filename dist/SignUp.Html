@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../style/SignUp.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <!-- navbar -->
+        </section>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Signup</h1>
+            <form method="post" id="form" autocomplete="off">
+                <div class="txt_field">
+                    <input type="text" name="fname" id="fname" required>
+                    <span></span>
+                    <label>Fist Name</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" name="lname" id="lname" required>
+                    <span></span>
+                    <label>Last Name</label>
+                </div>
+                <div class="txt_field" style="width: 100%;">
+                    <input type="email" name="email" id="email" required>
+                    <span></span>
+                    <label>Email</label>
+                </div>
+                <div class="txt_field" style="width: 100%;">
+                    <input type="number" name="PhoneNumber" id="PhoneNumber" required>
+                    <span></span>
+                    <label>Phone Number</label>
+                </div>
+                <div class="txt_field" style="width: 100%;">
+                    <input type="password" name="Password" id="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="txt_field" style="width: 100%;">
+                    <input type="password" name="Password" id="cpassword" required>
+                    <span></span>
+                    <label>Confirm Password</label>
+                </div>
+                <input type="submit" value="SignUp" id="Signup-btn">
+            </form>
+        </div>
+        <main>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> 
+    <script src="init-firebase.js"></script>
+    <script src="SignUp.js"></script>
+</body>
+
+</html>

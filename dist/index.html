@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/home.css">
+  <title>Home Page</title>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <nav id="navbar">
+                <ul>
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item"><a href="#">Manual Insertion</a></li>
+                    <li class="item"><a href="analysis.html">Analysis</a></li>
+                    <li class="item" id="logout"><a href="#">Log Out</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <div class="container1">
+            <img id="image" src="../img/Home Image.jpeg" alt="Image Loading">
+            <div id="container2">
+            <h1 id="name">PaisaDekho</h1>
+            <p id="desc"> We make money work in your favor &#128526;</p>
+        </div>
+        </div>
+
+        <div id="choosefile">
+            <p>Have a Image of your Bill?</p>
+            <p>Upload it</p>
+            <input type="file" id="myfile" name="myfile" hidden= "hidden">
+            <input type="Button" id="Button" value="Choose File">
+            <button type="submit" id="uploadBtn">Upload</button> 
+            <p class="progress"></p>
+        </div>
+
+    <div id="mi">
+      <p>Don't have a Bill?</p>
+      <p>Insert your expenses manually</p>
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn">Manual Insertion</button>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="mi-form">
+          <h1>Manual Insertion</h1>
+          <div class="form">
+
+            <!-- <input  class="text" type="text" name="Username" placeholder="Enter Product-Category"> -->
+
+            <form>
+              <label> Product-Category </label>
+              <select id="category">
+                <option value="Food"> Food
+                </option>
+                <option value="Fashion"> Fashion
+                </option>
+                <option value="Electronics"> Electronics
+                </option>
+                <option value="Entertainment"> Entertaniment
+                </option>
+                </option>
+                <option value="Fuel">Fuel
+                </option>
+                </option>
+                <option value="Grocery">Grocery
+                </option>
+                </option>
+                <option value="Pharmacy"> Pharmacy
+                </option>
+                </option>
+                <option value="Lifestyle">Lifestyle
+                </option>
+                </option>
+                <option value="Others">Others
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="form">
+            <label>Product-Name</label>
+            <input id="productName" class="text" type="text" name="Email" placeholder="Enter Product-Name" autocomplete="off">
+          </div>
+          <div class="form">
+            <label>Prize</label>
+            <input id="amount" class="text" type="text" name="Password" placeholder="Enter the Amount" autocomplete="off">
+          </div>
+          <input id="modal-Button" value="Submit" type="submit" name="submit">
+        </div>
+      </div>
+    </div>
+
+
+    <p id="ocr-1">How to use free online OCR</p>
+    <div class="card">
+      <div class="card-box">
+        <h4>Online or offline</h4>
+        <p class="content">Create text from image files using Paisa Dekho free online OCR software. You can use Optical Character
+          Recognition from any application, anytime, anywhere! Work online through Paisa Dekho. Try our easy-to-use PDF
+          tools like OCR services online for free.</p>
+      </div>
+      <div class="card-box">
+        <h4>Run OCR</h4>
+        <p class="content">Do more with your PDF documents! Upload files and use OCR to convert scanned images containing text in the
+          form of PDF document and make your life easier.</p>
+      </div>
+      <div class="card-box">
+        <h4>Send by email </h4>
+        <p class="content">Once your PDF file has been created, access the online OCR file by downloading the PDF to your computer and
+          viewing the OCR content within your document directly through your web browser. Once our software has output
+          your new, editable PDF. You will receive your summarized PDF at the end of every month through E-mail.</p>
+      </div>
+    </div>
+
+    <p id="ocr-2">Learn more about OCR</p>
+    <div class="card-1">
+      <div class="card-1-box">
+        <h4>What is OCR & how do you
+          OCR an image?
+        </h4>
+        <p class="content">Need to digitize paper documents? Just sit back and watch our online OCR software do its magic! Our OCR tool
+          will automatically scan your document for recognizable text within images.</p>
+      </div>
+      <div class="card-1-box">
+        <h4>Scan & recognize information within images</h4>
+        <p class="content">Have a lot of files to recognize and convert with OCR? No worries! Paisa Dekho gives you the power to
+          recognize text from files at once! Turn an image text recognition PDF documents, allowing you to edit scanned
+          documents with ease and avoid retyping documents in Microsoft Word or another application.</p>
+      </div>
+      <div class="card-1-box">
+        <h4>Create PDFs using OCR
+          or from blank</h4>
+        <p class="content">Our OCR recognition product is just one of the many ways you can format documents to your needs.</p>
+      </div>
+    </div>
+
+    <div id="myModal-1" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="mi-form">
+          <h1>User Details</h1>
+          <div class="form">
+
+            <!-- <input  class="text" type="text" name="Username" placeholder="Enter Product-Category"> -->
+          </div>
+          <div class="form">
+            <label>Income</label>
+            <input id="Income" class="text" type="text" name="Email" placeholder="Enter your Income" autocomplete="off">
+          </div>
+          <div class="form">
+            <label>Budget</label>
+            <input id="Budget" class="text" type="text" name="Password" placeholder="Enter your Budget" autocomplete="off">
+          </div>
+
+          <div class="form">
+            <label>Fixed Expense</label>
+            <input id="FixedExpense" class="text" type="text" name="Password" placeholder="Enter the fixed expense if any (eg. Rent, Installment)" autocomplete="off">
+          </div>
+
+          <input id="UserButton" value="Submit" type="submit" name="submit">
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-1">
+      <p id="about">About Us</p>
+      <div class="foot-1">
+        <a id="link" href="https://github.com/Premdhawane"> Prem Dhawane</a>
+        <a id="link" href="https://github.com/DhruvJ2"> Dhruv Jain</a>
+        <a id="link" href="https://github.com/krishnakhadke11"> krishna khadke</a>
+        <a id="link" href="https://github.com/JayuJain"> Jayu Jain</a>
+      </div>
+
+      <p id="connect">Connect Us</p>
+
+      <div class="foot-2">
+        <a href="https://www.instagram.com/premdhawane_09/"><img src="../img/Insta-removebg-preview.png" id="img"
+            alt="Insta"></a>
+        <a href="https://www.facebook.com/jayu.jain.73"><img src="../img/Facebook-removebg-preview.png" id="img"
+            alt="Facebook"></a>
+        <a href="https://twitter.com/dhruvj0"><img src="../img/Twitter-removebg-preview.png" id="img" alt="Twitter"></a>
+      </div>
+    </div>
+
+    <div class="foot-3">
+      <p class="copyright">
+        <img src="../img/copyright.png" height="14px" alt="">PaisaDekho.Pvt.Ltd.
+      </p>
+    </div>
+  </footer>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+  <script src="./init-firebase.js"></script>
+  <script src="index.js"></script>
+</html>

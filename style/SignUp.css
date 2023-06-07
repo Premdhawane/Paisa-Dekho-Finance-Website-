@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #3160e2, rgb(11, 153, 158));
+    height: 100vh;
+    overflow: auto;
+    margin-bottom:7% ;
+  }
+  
+  @-webkit-keyframes fadeAnimation {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10%);
+              transform: translateX(-10%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
+  
+  @keyframes fadeAnimation {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10%);
+              transform: translateX(-10%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
+  
+  .container {
+    position: absolute;
+    top: 11%;
+    left: 31%;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-animation: fadeAnimation ease 3s;
+            animation: fadeAnimation ease 3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    padding-bottom: 20px;
+  }
+  
+  .container h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #adadad;
+  }
+  
+  .container form {
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .container form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+    display: inline-block;
+    width: 49%;
+  }
+  .container form .txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  .container form .txt_field input:focus ~ label, .container form .txt_field input:valid ~ label {
+    top: -5px;
+    color: #067dccf6;
+  }
+  
+  .container form .txt_field input:focus ~ span::before,
+  .container form .txt_field input:valid ~ span::before {
+    width: 100%;
+  }
+  
+  .container form .txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .container form .txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #067dccf6;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .container form .forgetpass {
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+  }
+  
+  .container form .forgetpass:hover {
+    text-decoration: underline;
+  }
+  
+  .container form input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #6090eb;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .container form input[type="submit"]:hover {
+    background: #fff;
+    border: 1px solid #067dccf6;
+    color: #067dccf6;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .container form .signup_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .container form .signup_link a {
+    text-decoration: none;
+    color: #067dccf6;
+  }
+  
+  .container form .signup_link a:hover {
+    text-decoration: underline;
+  }
+  /*# sourceMappingURL=login.css.map */

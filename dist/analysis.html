@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style/analysis.css">
+   <title>Analysis</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+   </script>
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+   <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <nav id="navbar">
+            <ul>
+               <li class="item"><a href="index.html">Home</a></li>
+               <li class="item"><a href="#">Manual Insertion</a></li>
+               <li class="item"><a href="analysis.html">Analysis</a></li>
+               <li class="item" id="logout"><a href="#">Log Out</a></li>
+            </ul>
+         </nav>
+      </nav>
+   </header>
+
+   <main>
+      <div class="pdfElement">
+      <div class="head-bg">
+         <h1 class="head-1">Paisa Dekho</h1>
+         <h2 class="head-2">Detailed Analysis</h2>
+      </div>
+      
+      <div class="container">
+         <div class="card" style="margin-left:10px">
+            <h3>Budget</h3>
+            <img id="img-1" src="../img/Budget__2_-removebg-preview.png" height="50px" alt="Budget">
+            <p class="amt budget" id="Budget">Rs 1000</p>
+            <h4>Categories</h4>
+            <p>Food</p>
+            <p>Fashion</p>
+            <p>Electronics</p>
+            <p>Entertainment</p>
+            <p>Fuel</p>
+            <p>Grocery</p>
+            <p>Pharmacy</p>
+            <p>Lifestyle</p>
+            <p>Others</p>
+         </div>
+         
+         <div class="card" style="margin-right: 10px;">
+            <h3>Expenses</h3>
+            <img id="img-2" src="../img/Expense__2_-removebg-preview.png" height="50px" alt="Expenses">
+            <p class="amt expense" id="Expenses">Rs 600</p>
+            <h4>Expense Value</h4>
+            <p id="Food"></p>
+            <p id="Fashion"></p>
+            <p id="Electronics"></p>
+            <p id="Entertainment"></p>
+            <p id="Fuel"></p>
+            <p id="Grocery"></p>
+            <p id="Pharmacy"></p>
+            <p id="Lifestyle"></p>
+            <p id="Others"></p>
+         </div>
+         <div class="card" style="margin-top: 145px;">
+            <h3>Balance</h3>
+            <img id="img-3" src="../img/Balance-removebg-preview.png" height="50px" alt="Balance">
+            <p class="amt balance" id="Balance">Rs 400</p>
+            <!-- <h4>Discard</h4>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p> -->
+
+         </div>
+         
+      </div>
+      <!-- <div class="html2pdf__page-break"></div> -->
+      <div class="padding"> </div>
+      <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
+      <div class="alignBtn">
+      <button type="submit" id="createBtn">Create Pdf</button>
+         </div>
+   </div>
+   </main>
+
+   <footer class="footer">
+      <div class="footer-1">
+         <p id="about">About Us</p>
+         <div class="foot-1">
+            <a id="link" href="https://github.com/Premdhawane"> Prem Dhawane</a>
+            <a id="link" href="https://github.com/DhruvJ2"> Dhruv Jain</a>
+            <a id="link" href="https://github.com/krishnakhadke11"> krishna khadke</a>
+            <a id="link" href="https://github.com/JayuJain"> Jayu Jain</a>
+         </div>
+
+         <p id="connect">Connect Us</p>
+
+         <div class="foot-2">
+            <a href="https://www.instagram.com/premdhawane_09/"><img src="../img/Insta-removebg-preview.png" id="img"
+                  alt="Insta"></a>
+            <a href="https://www.facebook.com/jayu.jain.73"><img src="../img/Facebook-removebg-preview.png" id="img"
+                  alt="Facebook"></a>
+            <a href="https://twitter.com/dhruvj0"><img src="../img/Twitter-removebg-preview.png" id="img"
+                  alt="Twitter"></a>
+         </div>
+      </div>
+
+      <div class="foot-3">
+         <p class="copyright">
+            <img src="../img/copyright.png" height="14px" alt="">PaisaDekho.Pvt.Ltd.
+         </p>
+      </div>
+   </footer>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="./init-firebase.js"></script>
+<script src="analysis.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+   document.querySelector('#createBtn').addEventListener('click', ()=> {
+       var element = document.querySelector('.pdfElement');
+       element.classList.add('pdfpadding');
+       html2pdf(element);
+       setTimeout(function(){
+          element.classList.remove('pdfpadding');
+         },5000);
+   });
+   
+</script>
+</html>

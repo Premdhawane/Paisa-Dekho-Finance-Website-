@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Vujahday+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.pdfpadding{
+  margin-top: -350px;
+  margin-left: -10px;
+}
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#navbar {
+  background-color: #0891aa;
+  height: 50px;
+  width: 100%;
+  z-index: -1;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "Roboto Slab", serif;
+  /* font-family: "Vujahday Script"; */
+  font-weight: 800px;
+  font-size: 28px;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: black;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+#logout {
+  justify-content: flex-end;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 6px;
+  font-size: 25px;
+}
+
+h4 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.amt {
+  font-size: 22px;
+}
+
+#img-1 {
+  justify-content: center;
+  padding-left: 25px;
+}
+
+#img-2 {
+  justify-content: center;
+  padding-left: 30px;
+}
+#img-3 {
+  justify-content: center;
+  padding-left: 14px;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+
+.head-1 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-family: "Vujahday Script", cursive;
+  font-size: 95px;
+  letter-spacing: 3px;
+ 
+}
+.head-bg{
+  background-color:#26b7d1 ;
+}
+
+.head-2 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  padding-bottom: 20px;
+  margin-bottom:30px
+}
+
+.padding {
+  margin: 80px;
+}
+
+.footer {
+  background-color: #26b7d1;
+}
+
+#about {
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 25px;
+  font-weight: 600;
+}
+#connect {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 25px;
+}
+
+.foot-1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#link {
+  padding-left: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.foot-2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#img {
+  height: 30px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+#createBtn{
+  letter-spacing: 2px;
+  width: 200px;
+  margin: 15px;
+  color: white;
+  background-color: #26b7d1;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+}
+
+#createBtn:hover {
+  background-color: white;
+  color: #26b7d1;
+  border: #26b7d1 1px solid;
+  cursor: pointer;
+}
+
+.alignBtn{
+  display: flex;
+  justify-content: center;
+}
